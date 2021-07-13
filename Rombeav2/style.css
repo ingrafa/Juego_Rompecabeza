@@ -1,0 +1,330 @@
+body
+{
+    transition:1s;
+    background-color:#bbb;
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.btnScore:hover
+{
+    cursor:pointer;
+    background-color:rgba(255,255,255,.8);
+}
+.btnScore
+{
+    height:50px;
+    width:150px;
+    text-align:center;
+    line-height:50px;
+    font-size:8mm;
+    text-shadow:0px 0px 3px #000;
+    color:white;
+    background-color:#2DB300;
+    border:solid #bbb 2px;
+    border-radius:10px;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#contenido
+{
+    height:300px;
+    width:500px;
+    border:solid black 5px;
+    background-color:white;
+    border-radius:10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-150px;
+    margin-left:-250px;
+    z-index:100;
+    padding:20px;
+}
+.cubreout
+{
+    width:510px;
+    height:407px;
+    background-color:rgba(255,255,255,.5);
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-200px;
+    text-align:center;
+    font-size:18mm;
+    opacity:0;
+    filter:alpha(opacity=0);
+    line-height:407px;
+    text-shadow:0px 0px 3px #333;
+    transition:1s;
+}
+.cubre
+{
+    width:510px;
+    height:407px;
+    background-color:rgba(255,255,255,.5);
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-250px;
+    margin-top:-200px;
+    text-align:center;
+    font-size:8mm;
+    line-height:407px;
+    text-shadow:0px 0px 3px #333;
+    transition:1s;
+    color:#D90000;
+}
+#contenido input[type="text"]
+{
+    width:200px;
+    height:30px;
+    border:solid #bbb 1px;
+    margin-left:20px;
+}
+.contenedor
+{
+    height:400px;
+    width:510px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-200px;
+    margin-left:-250px;
+    transition:1s;
+}
+.cuadrito
+{
+    transition:1s;
+}
+.cuadrito:focus
+{
+    border:solid white 3px;
+}
+.cuadrito2
+{
+    transition:.2s;
+}
+.cuadrito2:hover
+{
+    cursor:pointer;
+    box-shadow:0px 0px 3px #333;
+    transform:scale(1.1);
+}
+#cargador
+{
+    display:none;
+}
+#img:hover
+{
+    transform:scale(.7);
+    transition:1s;
+    cursor:pointer;
+}
+#img
+{
+    height:400px;
+    width:500px;
+    transform:scale(.4);
+    transition:1s;
+    position:absolute;
+    top:50%;
+    left:-30px;
+    margin-top:-200px;
+}
+.eclipse
+{
+    position:fixed;
+    margin:0;
+    padding:0;
+    background-color:rgba(0,0,0,.8);
+    width:100%;
+    height:100%;
+    opacity:1;
+    filter:alpha(opacity=100);
+    z-index:99;
+    transition:1s;
+}
+.scores
+{
+    width:100%;
+    height:250px;
+    overflow:auto;
+}
+.score
+{
+    height:20px;
+    width:33.3%;
+    float:left;
+    border-bottom:solid #333 1px;
+    color:#333;
+    text-shadow:0px 0px 3px #333;
+    text-align:left;
+    text-indent:20px;
+    display:block;
+}
+.dia
+{
+    position:fixed;
+    margin:0;
+    padding:0;
+    background-color:rgba(0,0,0,.8);
+    opacity:0;
+    filter:alpha(opacity=0);
+    z-index:99;
+    transition:1s;
+}
+.reloj
+{
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    text-shadow:0px 0px 3px #333;
+    color:white;
+    width:100%;
+    position:absolute;
+    text-align:center;
+}
+.temp
+{
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:50%;
+    bottom:20px;
+    margin-left:-50px;
+    border:double #ccc 1px;
+    background-color:white;
+}
+.btnreload:hover{
+    cursor:pointer;
+    opacity:.8;
+}
+.btnreload
+{
+    width:200px;
+    height:50px;
+    border:solid #000 5px;
+    border-radius:5px;
+    background-color:rgba(240,255,200,.8);
+    text-align:center;
+    line-height:50px;
+    font-size:8mm;
+    color:#ccc;
+    text-shadow:0px 0px 3px #333;
+    position:ABSOLUTE;
+    bottom:20px;
+    left:50%;
+    margin-left:-100px;
+    z-index:2;
+}
+.botoncarga:hover{
+    cursor:pointer;
+    opacity:.8;
+}
+.botoncarga
+{
+    width:200px;
+    height:50px;
+    border:solid white 1px;
+    border-radius:5px;
+    background-color:rgba(240,255,200,.8);
+    text-align:center;
+    line-height:50px;
+    font-size:8mm;
+    color:#fff;
+    text-shadow:0px 0px 3px #000;
+    position:ABSOLUTE;
+    top:20px;
+    left:50%;
+    margin-left:-100px;
+    z-index:2;
+}
+.botonstart:hover
+{
+    cursor:pointer;
+    opacity:.8;
+}
+.botonstart
+{
+    font-size:8mm;
+    text-align:center;
+    line-height:120px;
+    height:120px;
+    width:120px;
+    color:white;
+    text-shadow:0px 0px 3px #333;
+    border-radius:100%;
+    box-shadow:0px 0px 3px #333;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-60px;
+    margin-top:-60px;
+    background-color:rgba(255,255,255,.8);
+}
+.contenedor div
+{
+    float:left;
+    height:100px;
+    width:100px;
+    margin:1px;
+}
+.logo1
+{
+    height:216px;
+    width:210px;
+}
+.logo2
+{
+    height:216px;
+    width:217px;
+}
+.tablej td
+{
+    border:solid black 1px;
+    width:50%;
+}
+.tablej
+{
+    width:440px;
+    height:216px;
+}
+.dragspace
+{
+    width:180px;
+    height:180px;
+    margin-left:-32px;
+    margin-top:-1px;
+    position:absolute;
+}
+.pieza:hover
+{
+    cursor:pointer;
+}
+
+.rompe
+{
+    position:absolute;
+    left:220px;
+
+}
+#container
+{
+    transition:1s;
+}
+.containerOut
+{
+    transition:1s;
+    margin-left:-1000px;
+}
+.encaje
+{
+    height:220px;
+    width:220px;
+    position:absolute;
+    margin-left:380px;
+    background:url("imagenes/mueva.png") no-repeat;
